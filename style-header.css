@@ -1,0 +1,99 @@
+/* ================================
+   GLOBAL RESET & VARIABLES
+================================ */
+:root {
+  --primary-color: purple;
+  --accent-color: #1e1e1e;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================================
+   HEADER SECTION
+================================ */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(40px);
+  z-index: 10;
+  height: 60px;
+  background-color: #000000;
+}
+
+/* ================================
+   HEADER WRAPPER
+================================ */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* ================================
+   LOGO STYLING
+================================ */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.logo p {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ================================
+   NAVIGATION LINKS
+================================ */
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(45deg, #aaa, #fff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================================
+   LOGIN BUTTON
+================================ */
+.login-nav button {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-nav button:hover {
+  transform: scale(1.1);
+}
